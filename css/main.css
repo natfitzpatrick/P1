@@ -56,7 +56,67 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   header {
+     font-family: helvetica;
+     font-weight: lighter;
+     font-size:  18pt;
+     margin-left: 50px;
+     margin-right: auto;
+     margin-top: 50px;
+     margin-bottom: 50px;
+     background-color: #ffffff
+     }
 
+   footer {
+       font-family: helvetica;
+       font-weight: lighter;
+       font-size:  10pt;
+       text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: auto;
+       margin-bottom: 50px;
+       background-color: #ffffff
+     }
+
+   main {
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 20px;
+     margin-bottom: 50px;
+     align-items: stretch;
+     text-align: center;
+     background-color: #ffffff
+   }
+   .headerimg {
+     width: 100%;
+   }
+   .container {
+       align-self: center;
+     	width: 65%;
+     	margin: 5% auto;
+     	overflow: hidden;
+     }
+   .galleryItem {
+     float: left;
+     width: 30%;
+     margin: 1.5%;
+     resize: inherit;
+     }
+   .galleryItem img {
+       box-sizing: border-box;
+       border-color: transparent;
+       border-width: 5px;
+       border-style:solid;
+       width: 100%;
+       transition: all 300ms ease-out;
+       transition-duration: 0.25s;
+     }
+   .galleryItem:hover img {
+       border-color: red;
+       border-width: 5px;
+       position: relative;
+     }
 
 
 

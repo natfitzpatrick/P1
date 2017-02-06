@@ -63,7 +63,11 @@ body {
 main {
   background-size: cover;
 }
-
+.headerimage {
+  max-width: 600px;
+  width: 100%;
+  position: 0 auto;
+}
 .brand {
   padding: 16px;
   margin: 0 auto;

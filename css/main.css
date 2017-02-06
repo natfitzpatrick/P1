@@ -56,89 +56,109 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   body {
-     font-family: helvetica, sans-serif;
-     margin: 0 auto;
-     max-width: 600px;
-     background: #232323;
-   }
-   div {
-     height: 200px;
-     max-width: 600px;
-     background-size: 100%;
-     position: relative;
-     margin: 40px 0 0 0;
-     border-radius: 12px;
-   }
-   header {
+body {
+  font-family: Helvetica;
   text-align: center;
-  background-size: 100%;
+}
+main {
+  background-size: cover;
+}
+
+.brand {
+  padding: 16px;
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  text-align: left;
+}
+
+.brand img {
+  width: 100%;
+  text-align: left;
+}
+
+/*
+ * Main Nav Menu Styling
+ */
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.main-nav li {
+  margin-bottom: 2px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: red;
+}
+
+.main-nav a {
+  background-color: #aaaaaa;
+  display: block;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+}
+
+.main-nav a:active {
+  background-color: grey;
+}
+
+
+/*
+ * Main Content Section Styling
+ */
+
+.content {
+  padding: 32px;
+}
+
+h1 {
+  font-family: Helvetica;
+  color: black;
+  text-align: center;
+  line-height: 30px;
+}
+small {
+  font-size: 50%;
+  text-align: center;
+}
+input {
+     border: 1px;
+     border-color: #aaaaaa;
+     padding: 10px;
+     font-size: 18px;
+   }
+input[type="submit"] {
+     background: red;
+     color: white;
+   }
+input[type="submit"]:hover:active {
+        background-color: grey;
+      }
+.google-map {
+  width: 100%;
+  height: 66.7vh;
+}
+
+
+/*
+ * Footer Styling
+ */
+
+.extra-info {
+  background-color: #777;
+  padding: 32px;
   color: white;
 }
-img {
-  background-size: cover;
-  max-width: 600px;
-}
-   h1 {
-     font-family: 'Cinzel', serif;
-     text-align: center;
-     font-size: 75px;
-     color: #aaaaaa;
-     margin: 60px 0 0 0;
-   }
-   p {
-     color: white;
-     background: black;
-     background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-     background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-     background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-     padding: 10px;
-     height: 30px;
-     line-height: 28px;
-     text-align: justify;
-     position: absolute;
-     bottom: 0;
-     margin: 0;
-   }
-   small {
-     opacity: 0;
-   }
-   .show-description p {
-     height: 150px;
-   }
-   .show-description small {
-     opacity: 1;
-   }
-   .featured {
-     background-image: image("header.jpg");
-   }
-   .about {
-     background-image: url("http://dash.ga.co/assets/secondcourse.jpg");
-   }
-   .contact {
-     background-image: url("http://dash.ga.co/assets/dessertcourse.jpg");
-   }
-   @media (max-width: 500px) {
-     h1 {
-       font-size: 50px;
-       margin-top: 20px;
-       line-height: 40px;
-     }
-     div {
-       margin: 20px 12px 0 12px;
-     }
-     p {
-       font-size: 20px;
-       line-height: 24px;
-       text-align: left;
-     }
-     small {
-       font-size: 16px;
-     }
-   }
-
-
-
 
 
 
@@ -152,9 +172,36 @@ img {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+ @media screen and (min-width: 600px) {
+   .main-nav {
+     background-color: #aaaaaa;
+     border-bottom: none;
+   }
 
-}
+   .main-nav li {
+     display: inline-block;
+     border-bottom: none;
+   }
+
+   .main-nav a {
+     background-color: transparent;
+   }
+
+   .main-nav a:hover {
+     background-color: grey;
+   }
+
+   .main-nav a:hover:active {
+     background-color: red;
+   }
+ }
+
+ @media screen and (min-width: 1024px) {
+   .main-nav {
+     font-size: 125%;
+   }
+ }
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
